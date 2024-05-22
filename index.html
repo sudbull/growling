@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat Mockup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Chat Mockup</h1>
+        <div class="form-container">
+            <form id="chat-form">
+                <label for="contact-name">Contact Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message" required>
+                <button type="submit">Add Message</button>
+            </form>
+        </div>
+        <div class="mockup-container">
+            <div class="phone-frame">
+                <div class="phone-header">
+                    <span id="contact-name-display">Contact Name</span>
+                </div>
+                <div class="chat-background" id="chat-background">
+                    <div id="chat-content"></div>
+                </div>
+                <div class="phone-footer">
+                    <input type="text" placeholder="Type a message" id="footer-input">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
+        <button id="export-video">Export as Video</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

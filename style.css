@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.mockup-container {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  border: 16px solid #333;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.phone-frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.phone-header {
+  background-color: #075E54;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-background {
+  background-image: url('whatsapp-bg.png'); /* Ensure this image exists in your project */
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#chat-content .chat-bubble {
+  background-color: #dcf8c6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.chat-bubble .time {
+  font-size: 0.8em;
+  color: #555;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.phone-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.phone-footer input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.phone-footer button {
+  padding: 10px;
+  background-color: #075E54;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
